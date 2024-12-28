@@ -2,7 +2,7 @@ import axios from 'axios';
 import {FlashcardDeck } from '../types/flashcard';
 
 const api = axios.create({
-  baseURL: 'quizwhiz-five.vercel.app/api',
+  baseURL: 'https://quizwhiz-five.vercel.app/api',
   headers: {
     'Content-Type': 'application/json',
   },
