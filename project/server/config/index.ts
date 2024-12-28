@@ -29,7 +29,7 @@ for (const envVar of requiredEnvVars) {
 // Export typed configuration
 export const CONFIG: Config = {
   PORT: Number(process.env.PORT) || 3000,
-  MONGODB_URI: process.env.MONGODB_URI || 'mongodb://localhost:27017/quizzwhiz',
+  MONGODB_URI: process.env.MONGODB_URI || 'mongodb+srv://test_user:ALXportfolio1@cluster0.jhlsm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0',
   GEMINI_API_KEY: process.env.GEMINI_API_KEY!, // We know this exists from validation above
   NODE_ENV: (process.env.NODE_ENV as Config['NODE_ENV']) || 'development',
   CORS_ORIGIN: process.env.CORS_ORIGIN || 'https://quizwhiz-five.vercel.app',
