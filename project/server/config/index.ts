@@ -32,7 +32,7 @@ export const CONFIG: Config = {
   MONGODB_URI: process.env.MONGODB_URI || 'mongodb://localhost:27017/quizzwhiz',
   GEMINI_API_KEY: process.env.GEMINI_API_KEY!, // We know this exists from validation above
   NODE_ENV: (process.env.NODE_ENV as Config['NODE_ENV']) || 'development',
-  CORS_ORIGIN: process.env.CORS_ORIGIN || 'http://localhost:5173,https://quizwhiz-five.vercel.app'.split(','),
+  CORS_ORIGIN: process.env.CORS_ORIGIN || 'https://quizwhiz-five.vercel.app',
   RATE_LIMIT: {
     WINDOW_MS: 15 * 60 * 1000, // 15 minutes
     MAX_REQUESTS: 100
